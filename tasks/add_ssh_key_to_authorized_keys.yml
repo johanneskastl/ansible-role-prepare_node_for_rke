@@ -1,0 +1,8 @@
+---
+# prepare_node_for_rke/tasks/add_ssh_key_to_authorized_keys.yml
+
+- name: 'Add ssh key to ~/.ssh/authorized_keys'
+  authorized_key:
+    user: "{{ user_to_add_ssh_key_to | default(ansible_user) }}"
+    state: 'present'
+    key: "{{ ssh_key_to_add }}"
