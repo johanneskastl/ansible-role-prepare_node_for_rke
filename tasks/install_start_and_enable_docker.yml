@@ -1,0 +1,13 @@
+---
+# prepare_node_for_rke/tasks/install_start_and_enable_docker.yml
+
+- name: 'Install docker packages'
+  package:
+    name: "{{ docker_packages }}"
+    state: 'present'
+
+- name: 'Start and enable the docker service'
+  service:
+    name: "{{ docker_system_service }}"
+    state: 'started'
+    enabled: 'true'
