@@ -6,3 +6,6 @@
 
 - name: 'Run add_ssh_key_to_authorized_keys.yml'
   include_tasks: add_ssh_key_to_authorized_keys.yml
+
+- name: 'Run add_user_to_docker_group.yml'
+  include_tasks: add_user_to_docker_group.yml
