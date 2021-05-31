@@ -11,7 +11,8 @@ None.
 Role Variables
 --------------
 
-None.
+- `ssh_key_to_add`: (required) public SSH key to add to the user's `~/.ssh/authorized_keys` file
+- `user_to_add_ssh_key_to`: (optional) Name of the user that you want to modify, defaults to the `ansible_user`
 
 Dependencies
 ------------
