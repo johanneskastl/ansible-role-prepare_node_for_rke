@@ -1,0 +1,8 @@
+---
+# prepare_node_for_rke/tasks/add_user_to_docker_group.yml
+
+- name: 'Add user to group docker'
+  user:
+    name: "{{ user_to_add_ssh_key_to | default(ansible_user) }}"
+    groups: "{{ docker_group }}"
+    append: 'true'
