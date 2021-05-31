@@ -1,6 +1,7 @@
 ---
 # prepare_node_for_rke/defaults/main.yml
 
-# docker package and service
+# docker package, group and service
 docker_packages: 'docker'
+docker_group: 'docker'
 docker_system_service: 'docker.service'
