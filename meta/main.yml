@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: 'prepare_node_for_rke'
+  namespace: 'johanneskastl'
   author: 'Johannes Kastl'
   description: "Prepare a node to install Kubernetes via Rancher's rke (which needs docker and passwordless SSH access)"
   company: 'B1 Systems GmbH'
