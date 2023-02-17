@@ -2,10 +2,10 @@
 # prepare_node_for_rke/tasks/main.yml
 
 - name: 'Run install_start_and_enable_docker.yml'
-  include_tasks: install_start_and_enable_docker.yml
+  ansible.builtin.include_tasks: install_start_and_enable_docker.yml
 
 - name: 'Run add_ssh_key_to_authorized_keys.yml'
-  include_tasks: add_ssh_key_to_authorized_keys.yml
+  ansible.builtin.include_tasks: add_ssh_key_to_authorized_keys.yml
 
 - name: 'Run add_user_to_docker_group.yml'
-  include_tasks: add_user_to_docker_group.yml
+  ansible.builtin.include_tasks: add_user_to_docker_group.yml
