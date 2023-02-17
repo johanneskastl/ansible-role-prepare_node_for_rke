@@ -24,7 +24,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-        - { role: 'johanneskastl.prepare_node_for_rke' }
+        - role: 'johanneskastl.prepare_node_for_rke'
 
 License
 -------
