@@ -1,3 +1,5 @@
+![Ansible Lint](https://github.com/johanneskastl/ansible-role-prepare_node_for_rke/workflows/Ansible%20Lint/badge.svg)
+
 prepare_node_for_rke
 =========
 
